@@ -12,6 +12,7 @@ describe("contract", () => {
         let track = system.track(contract.address);
         await contract.send(owner, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n });
         await system.run();
+
         expect(track.events()).toMatchInlineSnapshot(`
             [
               {
@@ -20,33 +21,33 @@ describe("contract", () => {
               {
                 "message": {
                   "body": {
-                    "cell": "x{95973DCC0000000000000000}",
+                    "cell": "x{946A98B60000000000000000}",
                     "type": "cell",
                   },
                   "bounce": true,
                   "from": "kQAI-3FJVc_ywSuY4vq0bYrzR7S4Och4y7bTU_i5yLOB3A6P",
-                  "to": "kQCY8hRET2P9ghS3wLorMDazt37aCxg5cGcV0t0rYodDbYFu",
+                  "to": "kQCBxflmV01SE3TxKyFw41-CSwSaohVrRfPoCTY0_OC5yCJ7",
                   "type": "internal",
                   "value": 1000000000n,
                 },
                 "type": "received",
               },
               {
-                "gasUsed": 8564n,
+                "gasUsed": 9409n,
                 "type": "processed",
               },
               {
                 "messages": [
                   {
                     "body": {
-                      "cell": "x{D37FB8210000000000000000}",
+                      "cell": "x{AFF90F570000000000000000}",
                       "type": "cell",
                     },
                     "bounce": true,
-                    "from": "kQCY8hRET2P9ghS3wLorMDazt37aCxg5cGcV0t0rYodDbYFu",
+                    "from": "kQCBxflmV01SE3TxKyFw41-CSwSaohVrRfPoCTY0_OC5yCJ7",
                     "to": "kQAI-3FJVc_ywSuY4vq0bYrzR7S4Och4y7bTU_i5yLOB3A6P",
                     "type": "internal",
-                    "value": 990240000n,
+                    "value": 989395000n,
                   },
                 ],
                 "type": "sent",
@@ -70,14 +71,14 @@ describe("contract", () => {
                   },
                   "bounce": true,
                   "from": "kQAI-3FJVc_ywSuY4vq0bYrzR7S4Och4y7bTU_i5yLOB3A6P",
-                  "to": "kQCY8hRET2P9ghS3wLorMDazt37aCxg5cGcV0t0rYodDbYFu",
+                  "to": "kQCBxflmV01SE3TxKyFw41-CSwSaohVrRfPoCTY0_OC5yCJ7",
                   "type": "internal",
                   "value": 1000000000n,
                 },
                 "type": "received",
               },
               {
-                "gasUsed": 4669n,
+                "gasUsed": 5349n,
                 "type": "processed",
               },
             ]
@@ -99,7 +100,7 @@ describe("contract", () => {
                   },
                   "bounce": true,
                   "from": "kQCVnZ1On-Ja4xfAfMbsq--jatb5sNnOUN421AHaXbebcCWH",
-                  "to": "kQCY8hRET2P9ghS3wLorMDazt37aCxg5cGcV0t0rYodDbYFu",
+                  "to": "kQCBxflmV01SE3TxKyFw41-CSwSaohVrRfPoCTY0_OC5yCJ7",
                   "type": "internal",
                   "value": 1000000000n,
                 },
@@ -115,10 +116,10 @@ describe("contract", () => {
                     "type": "empty",
                   },
                   "bounce": false,
-                  "from": "kQCY8hRET2P9ghS3wLorMDazt37aCxg5cGcV0t0rYodDbYFu",
+                  "from": "kQCBxflmV01SE3TxKyFw41-CSwSaohVrRfPoCTY0_OC5yCJ7",
                   "to": "kQCVnZ1On-Ja4xfAfMbsq--jatb5sNnOUN421AHaXbebcCWH",
                   "type": "internal",
-                  "value": 995047000n,
+                  "value": 994629000n,
                 },
                 "type": "sent-bounced",
               },
